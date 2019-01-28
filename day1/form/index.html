@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+
+    <title>Title</title>
+</head>
+<body>
+<form action="https://form-practice.herokuapp.com/create-application" method="post">
+    <div>
+        <label>
+            <span>Login</span>
+            <input autocomplete="off" type="text" name="login">
+        </label>
+    </div>
+    <div>
+        <label>
+            <span>Surname</span>
+            <input autocomplete="off" type="text" name="surname" required>
+        </label>
+    </div>
+    <div>
+        <label>
+            <span>Password</span>
+            <input autocomplete="off" type="password" name="password" minlength="6" maxlength="12">
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <span>Email</span>
+            <input type="email" name="email">
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <span>Birth date</span>
+            <input type="date" name="bdate" value="1970-01-01" min="1900-01-01" max="2018-12-31">
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <span>Amount of pets</span>
+            <input type="number" name="age">
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <span>Receive news</span>
+            <input type="checkbox" name="receivenews" checked>
+        </label>
+    </div>
+
+    <div>
+        <span>Sex</span>
+        <label>
+            <span>Male</span>
+            <input type="radio" name="sex" value="male" required>
+        </label>
+        <label>
+            <span>Female</span>
+            <input type="radio" name="sex" value="female" required>
+        </label>
+        <label>
+            <span>Other</span>
+            <input type="radio" name="sex" value="other" required>
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <span>Common wake up time</span>
+            <input type="time" name="wakeup">
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <span>Height (m)</span>
+            <input type="range" name="height" min="1" max="3" step="0.01">
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <span>Hair color</span>
+            <input type="color" name="hcolor">
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <span>Country</span>
+            <select>
+                <option value="ukraine">Ukraine</option>
+                <option value="canada">Canada</option>
+                <option value="belgium">Belgium</option>
+                <option value="denmark">Denmark</option>
+            </select>
+        </label>
+    </div>
+
+    <div>
+        <label>
+            <span>Tell me a joke</span>
+            <textarea id="story" name="joke"></textarea>
+        </label>
+    </div>
+
+    <button>Submit</button>
+</form>
+</body>
+</html>
